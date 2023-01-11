@@ -1,0 +1,46 @@
+<html>
+    <head>
+    <title>buscarCep</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>CEP</title>
+
+    <link href="style.css" rel="stylesheet">
+    <script src="util.js"></script>
+
+    </head>
+    <h1 id="title">buscarCep</h1>
+
+    <body>
+    <div class="card">
+        <div>
+      <form method="get" action=".">
+       
+        <p>Consultar CEP</p>
+        <label>Cep:</label>
+        <input name="cep" type="text" id="cep" value="" size="10" maxlength="9" onblur="buscar(this.value);" />
+        <button type="button" onclick="exibir()" >Buscar</button> 
+        <button onclick="limpar()">Limpar</button>
+        
+    <div>
+            <br>
+        <label>Rua: </label>
+        <input name="rua" type="text" id="rua" size="40" />
+        <br><br>
+        <label>Bairro:</label>
+        <input name="bairro" type="text" id="bairro" size="40" />
+        <br><br>
+        <label>Cidade:</label>
+        <input name="cidade" type="text" id="cidade" size="40" />
+        <br><br>
+        <label>Estado:</label>
+        <input name="uf" type="text" id="uf" size="2" />
+        <br><br>
+        <label>IBGE:</label>
+        <input name="ibge" type="text" id="ibge" size="8" />
+    </div>
+      </form>
+
+    </body>
+
+    </html>
+    
